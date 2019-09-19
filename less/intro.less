@@ -1,0 +1,72 @@
+.intro {
+
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/intro-triangle.svg), url(../img/back-mobile.jpg);
+    background-position:  center bottom;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 389px;
+    margin: 0 auto;
+    margin-top: -24px;
+    
+    &__text-img {
+   padding-top: 86px;
+}
+    
+}
+
+
+.intro--photo-page {
+    height: 190px;
+}
+
+.intro--text-imgg {
+    display: block;
+    padding-top:  60px;
+    width: 229px;
+    height: 39px;
+}
+
+
+@media (min-width : 768px) {
+    .intro {
+        width: auto;
+        height: 518px;
+        background-image: url("../img/intro-triangle-tablet.svg"), url(../img/back-desktop.jpg);
+        
+        margin-top: -27px;
+    }
+    
+    .intro--photo-page {
+        height: 298px;
+    }
+    
+    
+
+    .intro__text-img {
+        width: 370px;
+        height: auto;
+        margin-top: -5%;
+    }
+}
+
+@media (min-width : 1200px) {
+    .intro {
+       width: auto;
+        height: 460px;
+        background-image: url(../img/bg-intro-triangle-desktop.svg) ,url(../img/back-desktop1.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    
+    .intro--photo-page {
+        height: 298px;
+    }
+
+    .intro__text-img {
+        width: 460px;
+        height: auto;
+        margin-top: -9%;
+    }
+}
